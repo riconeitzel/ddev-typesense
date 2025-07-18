@@ -4,8 +4,6 @@ services:
     container_name: ddev-${DDEV_SITENAME}-typesense
     hostname: ${DDEV_SITENAME}-typesense
     image: typesense/typesense:29.0
-    expose:
-      - "8108"
     command: tail -f /dev/null
     networks: [default, ddev_default]
     restart: "yes"
